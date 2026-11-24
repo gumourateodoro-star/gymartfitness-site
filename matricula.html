@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matrícula · Gym ArtFitness</title>
+  <meta name="description" content="Escolha seu plano da Gym ArtFitness e faça a matrícula.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0F0F10">
+  <link rel="icon" href="assets/logo-gym-artfitness-recorte.png">
+  <link rel="preload" href="assets/fonts/overpass-variavel.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/estrada.css?v=3">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="seta" viewBox="0 0 24 24"><path d="M2 9.2h10.6V3.6L22.4 12l-9.8 8.4v-5.6H2z" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="envelope">
+      <a class="marca" href="./" aria-label="Gym ArtFitness, início">
+        <img src="assets/logo-gym-artfitness-recorte.png" alt="Gym ArtFitness" width="1220" height="330">
+      </a>
+      <nav class="menu" aria-label="Seções">
+        <a href="./#planos">Planos</a>
+        <a href="./#onde-fica">Onde fica</a>
+        <a class="botao-whats" href="https://wa.me/5551997557538?text=Oi!%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20matr%C3%ADcula">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="matricula">
+    <div class="envelope">
+      <div class="matricula-cabeca">
+        <h1>Matrícula</h1>
+        <p class="apoio">Três passos. No fim, você conclui com a nossa equipe pelo WhatsApp, com tudo já preenchido.</p>
+      </div>
+      <div>
+        <form id="form-matricula" novalidate>
+          <section class="etapa" aria-labelledby="etapa-1">
+            <div class="etapa-cabeca"><span class="etapa-numero" aria-hidden="true">1</span><h2 id="etapa-1">Seu plano</h2></div>
+            <fieldset style="border:0;margin:0;padding:0">
+              <legend class="visualmente-oculto" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Escolha o plano</legend>
+              <div class="opcoes-plano" id="opcoes-plano"></div>
+            </fieldset>
+          </section>
+
+          <section class="etapa" aria-labelledby="etapa-2">
+            <div class="etapa-cabeca"><span class="etapa-numero" aria-hidden="true">2</span><h2 id="etapa-2">Seus dados</h2></div>
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input id="nome" name="nome" autocomplete="name" required maxlength="120" aria-describedby="erro-nome">
+              <span class="erro-campo" id="erro-nome" hidden>Escreva seu nome para a equipe saber quem é.</span>
+            </div>
+            <div class="campo">
+              <label for="whats">WhatsApp com DDD</label>
+              <input id="whats" name="whats" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(51) 99999-9999" required maxlength="20" aria-describedby="erro-whats ajuda-whats">
+              <span class="ajuda" id="ajuda-whats">É por ele que a equipe confirma sua matrícula.</span>
+              <span class="erro-campo" id="erro-whats" hidden>Confira o número: ele precisa ter DDD e 8 ou 9 dígitos.</span>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail (opcional)</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="120">
+            </div>
+            <label class="consentimento">
+              <input type="checkbox" id="aceite" required aria-describedby="erro-aceite">
+              <span>Concordo que meus dados sejam usados para fazer a matrícula, conforme a <a href="privacidade.html">política de privacidade</a>.</span>
+            </label>
+            <p class="erro-campo" id="erro-aceite" hidden style="margin:8px 0 0">Para seguir, marque que concorda.</p>
+          </section>
+
+          <section class="etapa" aria-labelledby="etapa-3">
+            <div class="etapa-cabeca"><span class="etapa-numero" aria-hidden="true">3</span><h2 id="etapa-3">Pagamento</h2></div>
+            <div class="pagamento-aviso" id="aviso-pagamento">
+              <strong>Pagamento online em breve</strong>
+              <p>Por enquanto a matrícula é concluída com a nossa equipe pelo WhatsApp: você envia seus dados e a equipe combina o pagamento com você.</p>
+            </div>
+            <div class="acoes">
+              <button class="botao botao-cheio" type="submit" id="botao-concluir">Concluir pelo WhatsApp <svg aria-hidden="true"><use href="#seta"/></svg></button>
+            </div>
+          </section>
+        </form>
+      </div>
+
+      <aside class="resumo" aria-label="Resumo da matrícula" id="resumo"></aside>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="envelope">
+      <p>GYM ART FITNESS LTDA <span class="sep" aria-hidden="true">·</span> CNPJ 11.598.309/0001-41 <span class="sep" aria-hidden="true">·</span> CREF 004137-PJ/RS</p>
+      <nav aria-label="Documentos"><a href="privacidade.html">Política de privacidade</a><a href="exclusao-de-dados.html">Exclusão de dados</a></nav>
+    </div>
+  </footer>
+
+  <script src="assets/planos.js"></script>
+  <script src="assets/site.js"></script>
+  <script src="assets/matricula.js"></script>
+  <script src="assets/movimento.js"></script>
+</body>
+</html>

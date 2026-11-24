@@ -1,1 +1,4 @@
 .DS_Store
+# Material interno de design: não vai para o site público
+.impeccable/
+PRODUCT.md

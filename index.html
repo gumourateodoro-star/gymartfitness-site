@@ -3,139 +3,176 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GYM ArtFitness | Academia 24h em São Sebastião do Caí</title>
-  <meta name="description" content="Academia 24h em São Sebastião do Caí/RS. Musculação e aulas coletivas. Planos a partir de R$ 99,99/mês no plano anual. Agende sua aula experimental pelo WhatsApp.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Gym ArtFitness · Academia 24h em São Sebastião do Caí</title>
+  <meta name="description" content="Academia 24 horas em São Sebastião do Caí/RS. Musculação e aulas coletivas. Planos a partir de R$ 99,99/mês no plano anual. Escolha seu plano e faça a matrícula.">
+  <meta name="theme-color" content="#0F0F10">
+  <link rel="icon" href="assets/logo-gym-artfitness-recorte.png">
+  <link rel="preload" href="assets/fonts/overpass-variavel.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/estrada.css?v=3">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="seta" viewBox="0 0 24 24"><path d="M2 9.2h10.6V3.6L22.4 12l-9.8 8.4v-5.6H2z" fill="currentColor"/></symbol>
+    <symbol id="seta-baixo" viewBox="0 0 24 24"><path transform="rotate(90 12 12)" d="M2 9.2h10.6V3.6L22.4 12l-9.8 8.4v-5.6H2z" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
   <header class="topo">
-    <div class="container">
-      <a class="marca" href="#">Gym <span>ArtFitness</span></a>
-      <nav aria-label="Principal">
+    <div class="envelope">
+      <a class="marca" href="./" aria-label="Gym ArtFitness, início">
+        <img src="assets/logo-gym-artfitness-recorte.png" alt="Gym ArtFitness" width="1220" height="330">
+      </a>
+      <nav class="menu" aria-label="Seções">
         <a href="#planos">Planos</a>
-        <a href="#academia">A academia</a>
-        <a href="#visita">Onde estamos</a>
-        <a class="botao pequeno" href="https://wa.me/5551997557538?text=Quero%20agendar%20uma%20aula%20experimental">Aula experimental</a>
+        <a href="#aulas">Aulas</a>
+        <a href="#onde-fica">Onde fica</a>
+        <a class="botao-whats" href="https://wa.me/5551997557538?text=Oi!%20Quero%20saber%20mais%20sobre%20a%20Gym%20ArtFitness">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="abertura" aria-labelledby="titulo">
-      <div class="container">
-        <span class="selo">Aberta 24h</span>
-        <h1 id="titulo">Treine na hora <em>que cabe na sua rotina.</em></h1>
-        <p>Academia 24h em São Sebastião do Caí. Musculação e aulas coletivas, com professores para orientar o seu treino.</p>
-        <a class="botao" href="https://wa.me/5551997557538?text=Quero%20agendar%20uma%20aula%20experimental">Agendar aula experimental</a>
-        <p class="detalhe">Pelo WhatsApp (51) 99755-7538</p>
-      </div>
-    </section>
-
-    <section id="planos" aria-labelledby="t-planos">
-      <div class="container">
-        <p class="rotulo">Planos</p>
-        <h2 id="t-planos">Quanto custa treinar na Gym</h2>
-        <p class="intro">Quanto mais longo o plano, menor o valor por mês. Valores mensais.</p>
-
-        <div class="planos">
-          <article class="plano destaque">
-            <span class="etiqueta">Menor valor</span>
-            <h3>Anual</h3>
-            <p class="preco">R$ 99,99 <small>/mês</small></p>
-            <p class="acesso">Acesso 24h, 7 dias por semana</p>
-          </article>
-          <article class="plano">
-            <h3>Semestral</h3>
-            <p class="preco">R$ 109,99 <small>/mês</small></p>
-            <p class="acesso">Acesso 24h, 7 dias por semana</p>
-          </article>
-          <article class="plano">
-            <h3>Trimestral</h3>
-            <p class="preco">R$ 119,99 <small>/mês</small></p>
-            <p class="acesso">Acesso 24h, 7 dias por semana</p>
-          </article>
-          <article class="plano">
-            <h3>24h Mensal</h3>
-            <p class="preco">R$ 145,00 <small>/mês</small></p>
-            <p class="acesso">Acesso 24h</p>
-          </article>
-          <article class="plano">
-            <h3>Família ou Casal</h3>
-            <p class="preco">R$ 135,00 <small>/pessoa</small></p>
-            <p class="acesso">Acesso 24h para todos</p>
-          </article>
-          <article class="plano">
-            <h3>Five</h3>
-            <p class="preco">R$ 135,00 <small>/mês</small></p>
-            <p class="acesso">Segunda a sexta, das 7h às 22h</p>
-          </article>
-          <article class="plano">
-            <h3>Semi-personal</h3>
-            <p class="preco">R$ 259,00 <small>/mês</small></p>
-            <p class="acesso">Treino com professor em grupo de 3 a 4 alunos, 3x por semana. Segunda a sexta, das 7h às 22h.</p>
-          </article>
-          <article class="plano">
-            <h3>Estudante</h3>
-            <p class="preco">R$ 120,00 <small>/mês</small></p>
-            <p class="acesso">Para quem estuda em São Sebastião do Caí. Das 8h às 11h30 e das 13h30 às 16h30.</p>
-          </article>
-        </div>
-        <p class="nota">Taxa de inscrição para novos alunos: R$ 15. Condições de cada plano na recepção ou pelo WhatsApp.</p>
-      </div>
-    </section>
-
-    <section id="academia" aria-labelledby="t-academia">
-      <div class="container">
-        <p class="rotulo">A academia</p>
-        <h2 id="t-academia">Feita para quem quer treinar de verdade</h2>
-        <div class="motivos">
-          <div class="motivo">
-            <h3><span>24</span> horas</h3>
-            <p>Treine antes do trabalho, depois da faculdade ou de madrugada. Você escolhe a hora.</p>
-          </div>
-          <div class="motivo">
-            <h3>Musculação <span>+</span> aulas</h3>
-            <p>Sala de musculação completa e aulas coletivas para variar o treino.</p>
-          </div>
-          <div class="motivo">
-            <h3>Desde <span>2010</span></h3>
-            <p>Mais de 15 anos cuidando de quem treina em São Sebastião do Caí.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="visita" aria-labelledby="t-visita">
-      <div class="container visita">
+  <main id="conteudo">
+    <section class="abertura" aria-labelledby="titulo-abertura">
+      <div class="envelope">
         <div>
-          <p class="rotulo">Venha conhecer</p>
-          <h2 id="t-visita">Ainda em dúvida sobre qual plano?</h2>
-          <p class="intro">Chame no WhatsApp e agende sua aula experimental. A gente te mostra a academia e ajuda a escolher.</p>
-          <a class="botao" href="https://wa.me/5551997557538?text=Quero%20agendar%20uma%20aula%20experimental">Chamar no WhatsApp</a>
+          <h1 id="titulo-abertura">Treine na hora que você puder.</h1>
+          <p class="apoio">Academia 24 horas em São Sebastião do Caí. Musculação a qualquer hora nos planos 24h, de madrugada inclusive. E aulas coletivas.</p>
+          <p class="placa-preco">
+            <span>Planos a partir de</span>
+            <strong class="numero"><span data-contar="99.99">R$ 99,99</span><small>/mês</small></strong>
+            <span>no plano anual</span>
+          </p>
+          <div class="acoes">
+            <a class="botao botao-cheio" href="#planos">Ver planos <svg aria-hidden="true"><use href="#seta-baixo"/></svg></a>
+            <a class="botao botao-vazado" href="https://wa.me/5551997557538?text=Quero%20agendar%20uma%20aula%20experimental">Agendar aula experimental</a>
+          </div>
         </div>
-        <dl class="cartao">
-          <dt>Endereço</dt>
-          <dd>Rua Andrade Neves, 444, Centro<br>São Sebastião do Caí/RS</dd>
-          <dt>WhatsApp</dt>
-          <dd><a href="https://wa.me/5551997557538">(51) 99755-7538</a></dd>
-          <dt>Instagram</dt>
-          <dd><a href="https://www.instagram.com/gymartfitnessct/">@gymartfitnessct</a></dd>
-        </dl>
+        <div class="losango-area">
+          <div class="losango" role="img" aria-label="Placa: aberto 24 horas, todo dia">
+            <p class="losango-texto">
+              <span class="pequeno">Aberto</span>
+              <span class="grande">24H</span>
+              <span class="pequeno">todo dia</span>
+              <span class="agora" id="agora" hidden></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="faixa" aria-hidden="true"><div class="faixa-trilho"><span>24 horas</span><span>Todos os dias</span><span>Musculação</span><span>Aulas coletivas</span><span>São Sebastião do Caí</span><span>24 horas</span><span>Todos os dias</span><span>Musculação</span><span>Aulas coletivas</span><span>São Sebastião do Caí</span></div></div>
+
+    <section class="secao" id="planos" aria-labelledby="titulo-planos">
+      <div class="envelope">
+        <div class="secao-cabeca revelar">
+          <h2 id="titulo-planos">Escolha seu plano</h2>
+          <p>Cada plano mostra a régua das 24 horas: a parte acesa é quando você pode treinar, e o quadrado em destaque é a hora de agora.</p>
+        </div>
+        <div class="saidas" id="lista-planos"></div>
+        <p class="nota-planos">Todos os valores são mensais. Novos alunos pagam taxa de inscrição de R$ 15. As demais condições de cada plano a equipe passa na matrícula.</p>
+      </div>
+    </section>
+
+    <section class="secao" id="comparar" aria-labelledby="titulo-comparar">
+      <div class="envelope">
+        <div class="secao-cabeca revelar">
+          <h2 id="titulo-comparar">Os 8 planos lado a lado</h2>
+          <p>Valor e horário de todos os planos numa tela só.</p>
+        </div>
+        <div class="tabela-envelope revelar" tabindex="0" role="region" aria-label="Tabela comparando os planos">
+          <table class="comparar">
+            <thead>
+              <tr><th scope="col">Plano</th><th scope="col">Por mês</th><th scope="col">Acesso</th><th scope="col">Horas do dia</th><th scope="col">Matrícula</th></tr>
+            </thead>
+            <tbody id="tabela-planos"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="secao" id="aulas" aria-labelledby="titulo-aulas">
+      <div class="envelope">
+        <div class="secao-cabeca revelar">
+          <h2 id="titulo-aulas">Aulas coletivas</h2>
+          <p>Além da musculação. A grade de dias e horários muda: confirma com a equipe pelo WhatsApp.</p>
+        </div>
+        <ul class="aulas revelar">
+          <li><strong>Ritmo 360</strong><span>Dança. Não precisa saber dançar.</span></li>
+          <li><strong>Boxe</strong><span>Técnica, força e controle, no Conecta Gym.</span></li>
+          <li><strong>Yoga</strong><span>Para desacelerar.</span></li>
+          <li><strong>Spinning Xtreme</strong><span>Bike, cada um no seu ritmo.</span></li>
+          <li><strong>Crosstraining</strong><span>Força, resistência e condicionamento.</span></li>
+          <li><strong>Atleta Pro</strong><span>Preparação física para quem pratica esporte.</span></li>
+          <li><strong>GAP</strong></li>
+          <li><strong>Running</strong></li>
+        </ul>
+        <div class="fotos revelar" aria-label="Espaços reservados para fotos reais da academia">
+          <div class="foto-vaga">Foto real da musculação</div>
+          <div class="foto-vaga">Foto real das esteiras</div>
+          <div class="foto-vaga">Foto real de uma aula</div>
+          <div class="foto-vaga">Foto real do Conecta Gym</div>
+          <div class="foto-vaga">Foto real da fachada</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao chamada" aria-labelledby="titulo-chamada">
+      <div class="envelope">
+        <div>
+          <h2 id="titulo-chamada">Vem conhecer antes de decidir</h2>
+          <p class="suave">Agende uma aula experimental pelo WhatsApp. A gente mostra a academia e ajuda você a escolher o plano.</p>
+        </div>
+        <a class="botao botao-cheio" href="https://wa.me/5551997557538?text=Quero%20agendar%20uma%20aula%20experimental">Agendar pelo WhatsApp <svg aria-hidden="true"><use href="#seta"/></svg></a>
+      </div>
+    </section>
+
+    <section class="secao" id="onde-fica" aria-labelledby="titulo-onde">
+      <div class="envelope">
+        <h2 id="titulo-onde" class="revelar">Onde fica</h2>
+        <div class="endereco revelar">
+          <div class="placa-endereco">
+            <strong>Rua Andrade Neves, 444</strong>
+            <span>Centro, São Sebastião do Caí/RS</span>
+            <p class="acoes" style="margin:20px 0 0"><a class="botao botao-cheio" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Andrade%20Neves%2C%20444%2C%20S%C3%A3o%20Sebasti%C3%A3o%20do%20Ca%C3%AD%20RS">Abrir no mapa <svg aria-hidden="true"><use href="#seta"/></svg></a></p>
+          </div>
+          <dl class="contatos">
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5551997557538">(51) 99755-7538</a></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/gymartfitnessct/">@gymartfitnessct</a></dd></div>
+            <div><dt>Acesso</dt><dd>24h nos planos 24h. Horário reduzido nos planos Five, Semi-personal e Estudante.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="secao" id="perguntas" aria-labelledby="titulo-perguntas">
+      <div class="envelope">
+        <h2 id="titulo-perguntas" class="revelar">Perguntas frequentes</h2>
+        <div class="perguntas revelar">
+          <details><summary>Todos os planos são 24 horas?<svg aria-hidden="true"><use href="#seta-baixo"/></svg></summary><div class="resposta"><p>Não. Anual, Semestral, Trimestral, 24h Mensal e Família ou Casal são 24h, todos os dias. Five e Semi-personal são de segunda a sexta, das 7h às 22h. O Estudante vai das 8h às 11h30 e das 13h30 às 16h30.</p></div></details>
+          <details><summary>Tem taxa de inscrição?<svg aria-hidden="true"><use href="#seta-baixo"/></svg></summary><div class="resposta"><p>Sim. Novos alunos pagam R$ 15 de taxa de inscrição.</p></div></details>
+          <details><summary>Quem pode fazer o plano Estudante?<svg aria-hidden="true"><use href="#seta-baixo"/></svg></summary><div class="resposta"><p>Quem estuda em instituição de ensino de São Sebastião do Caí. A equipe confirma na matrícula o que precisa apresentar.</p></div></details>
+          <details><summary>Como funciona o Semi-personal?<svg aria-hidden="true"><use href="#seta-baixo"/></svg></summary><div class="resposta"><p>Treino com professor em grupo de 3 a 4 alunos, 3 vezes por semana, de segunda a sexta, das 7h às 22h.</p></div></details>
+          <details><summary>Como faço a matrícula?<svg aria-hidden="true"><use href="#seta-baixo"/></svg></summary><div class="resposta"><p>Escolha o plano e toque em "Assinar". Você preenche seus dados e conclui com a nossa equipe pelo WhatsApp. Também dá para fazer direto na recepção.</p></div></details>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>GYM ART FITNESS LTDA · CNPJ 11.598.309/0001-41 · CREF 004137-PJ/RS</p>
-      <nav aria-label="Documentos">
-        <a href="privacidade.html">Política de Privacidade</a>
-        <a href="exclusao-de-dados.html">Exclusão de dados</a>
-      </nav>
+  <footer class="rodape">
+    <div class="envelope">
+      <img src="assets/logo-gym-artfitness-recorte.png" alt="Gym ArtFitness" width="1220" height="330">
+      <p>Rua Andrade Neves, 444, Centro, São Sebastião do Caí/RS <span class="sep" aria-hidden="true">·</span> <a href="https://wa.me/5551997557538">(51) 99755-7538</a></p>
+      <p>GYM ART FITNESS LTDA <span class="sep" aria-hidden="true">·</span> CNPJ 11.598.309/0001-41 <span class="sep" aria-hidden="true">·</span> CREF 004137-PJ/RS</p>
+      <nav aria-label="Documentos"><a href="privacidade.html">Política de privacidade</a><a href="exclusao-de-dados.html">Exclusão de dados</a></nav>
     </div>
   </footer>
+
+  <script src="assets/planos.js"></script>
+  <script src="assets/site.js"></script>
+  <script src="assets/movimento.js"></script>
 </body>
 </html>
