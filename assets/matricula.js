@@ -45,7 +45,9 @@
       "</div>";
 
     var online = !!p.linkPagamento;
-    aviso.hidden = online;
+    aviso.innerHTML = online
+      ? "<strong>Pagamento seguro pelo Asaas</strong><p>Você vai para a página do Asaas e paga com cartão, Pix ou boleto. A mensalidade se repete todo mês.</p>"
+      : "<strong>Pagamento online em breve</strong><p>Por enquanto a matrícula é concluída com a nossa equipe pelo WhatsApp: você envia seus dados e a equipe combina o pagamento com você.</p>";
     botao.innerHTML = (online ? "Ir para o pagamento" : "Concluir pelo WhatsApp") +
       ' <svg aria-hidden="true"><use href="#seta"/></svg>';
     history.replaceState(null, "", "?plano=" + encodeURIComponent(atual));
